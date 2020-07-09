@@ -34,7 +34,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.5.2'
   gem 'cloudinary'
 end
 group :development do
