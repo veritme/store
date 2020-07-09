@@ -28,7 +28,7 @@ production:
   enconding: utf8
   pool: 5
   timeout: 5000
-  database: heroku_5381f61137c5578
-  username: ba520f944034c2
-  password: 1667992c
+  database: "heroku_5381f61137c5578"
+  username: "ba520f944034c2"
+  password: "1667992c"
   port: 3306
