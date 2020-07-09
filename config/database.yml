@@ -24,11 +24,11 @@ production:
   #<<: *default
   #database: db/production.sqlite3
   adapter: mysql2
-  host: us-cdbr-east-02.cleardb.com
+  host: l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
   #enconding: utf8
   pool: 5
   timeout: 5000
-  database: heroku_88ae963c2b721b4
-  username: b873706787a481
-  password: 929ca0ff
+  database: om8su1h8mgzy1yp1
+  username: hgy4pm96pla4i91s
+  password: m707q3l0yv3vx2m4
   port: 3306
