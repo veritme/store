@@ -25,7 +25,7 @@ production:
   #database: db/production.sqlite3
   adapter: mysql2
   host: us-cdbr-east-02.cleardb.com
-  #enconding: utf8
+  enconding: utf8_general_ci
   pool: 5
   timeout: 5000
   database: heroku_7f48c66d76da782
