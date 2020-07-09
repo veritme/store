@@ -1,0 +1,6 @@
+production:
+  cloud_name: "smart-house"
+  api_key: "626935888483698"
+  api_secret: "rQNZ1P33pycfjcJqsDfuUi3XvDA"
+  secure: true
+  cdn_subdomain: true
