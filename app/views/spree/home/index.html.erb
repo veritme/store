@@ -1,0 +1,81 @@
+<% @body_id = 'home' %>
+
+<div class="homepage-hero-image mb-3 position-relative">
+  <img class="hero-image position-absolute lazyload"
+    data-src="<%= asset_path('homepage/products_banner.jpg') %>"
+
+    alt="Productos" />
+
+  <div class="hero-content">
+    <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4 text-white">
+      Mira nuestros productos
+    </div>
+    <div>
+      <%= link_to Spree.t('homepage.shop_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+      <div class="homepage-taxon-box mb-3">
+        <%= link_to spree.nested_taxons_path('cameras') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/cameras_banner.jpg') %>"
+
+            alt="Cámaras" />
+
+          <div class="homepage-taxon-box-text">
+            <h3>Cámaras</h3>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="homepage-taxon-box">
+        <%= link_to spree.nested_taxons_path('doorlocks') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/doorlocks_banner.jpg') %>"
+            alt="Cerraduras" />
+
+          <div class="homepage-taxon-box-text" role="img" aria-label="<%= Spree.t('homepage.sportswear') %>">
+            <h3>Cerraduras</h3>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+
+    <div class="col-6 d-flex flex-column">
+
+      <div class="homepage-taxon-box flex-grow-1">
+        <%= link_to spree.nested_taxons_path('lights') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/lights_banner.jpg') %>"
+            alt="Luces" />
+
+          <div class="homepage-taxon-box-text">
+            <h3>Luces</h3>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+    <div class="col-12 d-flex flex-column mt-3">
+
+      <div class="homepage-taxon-box flex-grow-1">
+        <%= link_to spree.nested_taxons_path('domotica') do %>
+          <img class="w-100 lazyload"
+            data-src="<%= asset_path('homepage/domotica_banner.jpg') %>"
+            alt="Luces" />
+
+          <div class="homepage-taxon-box-text">
+            <h3>Automatización</h3>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>

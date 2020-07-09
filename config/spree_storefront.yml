@@ -1,0 +1,10 @@
+default:
+  navigation:
+    - title: Cámaras
+      url: /t/cameras
+    - title: Cerraduras
+      url: /t/doorlocks
+    - title: Luces
+      url: /t/lights
+    - title: Automatización
+      url: /t/domotica
