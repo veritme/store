@@ -21,14 +21,14 @@ test:
   database: db/test.sqlite3
 
 production:
-  #<<: *default
-  #database: db/production.sqlite3
-  adapter: mysql2
-  host: us-cdbr-east-02.cleardb.com
-  enconding: utf8_general_ci
-  pool: 5
-  timeout: 5000
-  database: heroku_7f48c66d76da782
-  username: bc9b0de3e769ec
-  password: 8e8b990f
-  port: 3306
+  <<: *default
+  database: db/production.sqlite3
+  #adapter: mysql2
+  #host: us-cdbr-east-02.cleardb.com
+  #enconding: utf8_general_ci
+  #pool: 5
+  #timeout: 5000
+  #database: heroku_7f48c66d76da782
+  #username: bc9b0de3e769ec
+  #password: 8e8b990f
+  #port: 3306
