@@ -53,7 +53,7 @@ en:
         item_total: Total de Artículo
         number: Número
         payment_state: Estado del Pago
-        shipment_state: Estado del Envío
+        shipment_state: Estado de Instalación
         special_instructions: Instrucciones especiales
         state: Estado
         total: Total
@@ -74,7 +74,7 @@ en:
         state: Provincia dirección envío
         zipcode: Código postal dirección envío
       spree/payment:
-        amount: Cuantía
+        amount: Cantidad
       spree/payment_method:
         name: Nombre
       spree/product:
@@ -107,7 +107,7 @@ en:
       spree/prototype:
         name: Nombre
       spree/return_authorization:
-        amount: Cuantía
+        amount: Cantidad
       spree/role:
         name: Nombre
       spree/state:
@@ -257,12 +257,14 @@ en:
         one: Función
         other: Funciones
       spree/shipment:
-        one: Envío
-        other: Envíos
+        one: Instalación
+        other: Instalación
       spree/shipping_category:
         one: Categoría de envío
         other: Categorías de envío
       spree/shipping_method:
+        one: Método de instalación
+        other: Métodos de instalación
       spree/state:
         one: Provincia
         other: Provincias
@@ -339,6 +341,10 @@ en:
         one: 1 error evitó que este %{resource} fuese grabado.
         other: "%{count} errores evitaron que este %{resource} fuese grabado:"
   spree:
+    checkout_page:
+      delivery_method: Metodo de Instalación
+      back_to_cart: Volver al Carrito
+      header: Pedido
     all_rights_reserved: Todos los derechos reservados
     homepage:
       shop_now: Comprar
@@ -422,7 +428,7 @@ en:
       save: "Guardar"
     adjustable: Ajustable
     adjustment: Ajuste
-    adjustment_amount: Cuantía
+    adjustment_amount: Cantidad
     adjustment_labels:
       tax_rates:
         including_tax: '%{name}%{amount} (Incluído en el precio)'
@@ -471,7 +477,7 @@ en:
     already_signed_up_for_analytics: Ya te has dado de alta en Spree Analytics
     alt_text: Texto alternativo
     alternative_phone: Teléfono alternativo
-    amount: Cuantía
+    amount: Cantidad
     analytics_desc_header_1: Spree Analytics
     analytics_desc_header_2: Análisis directo integrado en tu panel de instrumentos de Spree
     analytics_desc_list_1: Obtén la información de ventas en directo tal como sucede.
@@ -651,7 +657,7 @@ en:
     destroy: Eliminar
     details: Detalles
     discontinue_on: Descontinuar desde
-    discount_amount: Cuantía descuento
+    discount_amount: Cantidad descuento
     dismiss_banner: No. Gracias! No estoy interesado, no mostrar este mensaje otra vez
     display: Mostrar
     display_currency: Moneda a mostrar
@@ -709,7 +715,7 @@ en:
       count_on_hand_setter: No se pudo establecer count_on_hand manualmente, ya que está establecido automáticamente por la callback recalculate_count_on_hand. Por favor utiliza `update_column(:count_on_hand, value)` en vez de ello.
     exchange_for:
     excl:
-    existing_shipments: Envíos existentes
+    existing_shipments: Instalaciónes existentes
     expedited_exchanges_warning: Advertencia de intercambios expeditos
     expiration: Vencimiento
     extension: Extensión
@@ -834,7 +840,7 @@ en:
     meta_keywords: Keywords Meta
     meta_title: Título Meta
     metadata: Metadata
-    minimal_amount: Cuantía mínima
+    minimal_amount: Cantidad mínima
     month: Mes
     more: Más
     move_stock_between_locations: Mover Stock entre localizaciones
@@ -878,7 +884,7 @@ en:
     new_rma_reason: Nueva razón RMA
     new_shipment_at_location: Nueva locación de remitente
     new_shipping_category: Nueva categoría de envío
-    new_shipping_method: Nueva forma de envío
+    new_shipping_method: Nueva forma de instalación
     new_state: Nueva provincia
     new_stock_location: Nueva localización de stock
     new_stock_movement: Nuevo movimiento de stock
@@ -905,7 +911,7 @@ en:
     no_tracking_present: No se proporcionaron detalles de seguimiento
     none: Ninguno
     none_selected: Ninguno seleccionado
-    normal_amount: Cuantía normal
+    normal_amount: Cantidad normal
     not: 'no'
     not_available: N/D
     not_enough_stock: No hay suficiente inventario en la localización fuente para completar esta transferencia
@@ -967,7 +973,7 @@ en:
       complete: completado
       confirm: Confirmada
       considered_risky: considerado arriesgado
-      delivery: Entrega
+      delivery: Instalación
       payment: Pago
       resumed: reanudado
       returned: devuelto
@@ -1081,11 +1087,11 @@ en:
         description:
         name:
       create_line_items:
-        description: Rellena el carrito con la cuantía especificada de la variante
+        description: Rellena el carrito con la cantidad especificada de la variante
         name: Crea líneas de artículos
       free_shipping:
         description: Hace gratuitos todos los tipos de envío para el pedido
-        name: Envíos Gratuitos
+        name: Instalación Gratuita
     promotion_actions: Acciones
     promotion_form:
       match_policies:
@@ -1236,7 +1242,7 @@ en:
     ship: Enviar
     ship_address: Dirección de envío
     ship_total: Total de envío
-    shipment: Envío
+    shipment: Instalación
     shipment_adjustments: Ajusted de envío
     shipment_details: Detalles de Envío
     shipment_mailer:
@@ -1248,7 +1254,7 @@ en:
         thanks: "¡Gracias por su compra!"
         track_information: 'Información Seguimiento: %{tracking}'
         track_link: 'Link del tracking: %{url}'
-    shipment_state: Estado del envío
+    shipment_state: Estado de instalación
     shipment_states:
       backorder: Pedido pendiente de existencias
       canceled: Cancelado
@@ -1258,18 +1264,18 @@ en:
       shipped: Enviado
     shipment_transfer_error: Error de transferencia de pedido
     shipment_transfer_success: Transferencia de pedido exitosa
-    shipments: Envíos
+    shipments: Instalación
     shipped: Enviado
-    shipping: Envío
+    shipping: Instalación
     shipping_address: Dirección de envío
-    shipping_categories: Categorías de envío
+    shipping_categories: Categorías de instalación
     shipping_category: Categoría de Envío
     shipping_flat_rate_per_item: Tarifa plana por artículo empaquetado
     shipping_flat_rate_per_order: Tarifa Plana
     shipping_flexible_rate: Tarifa Flexible por artículo empaquetado
     shipping_instructions: Instrucciones de envío
-    shipping_method: Método de Envío
-    shipping_methods: Métodos de Envío
+    shipping_method: Método de instalación
+    shipping_methods: Métodos de instalación
     shipping_price_sack: Saco de Precio
     shipping_rates:
       display_price:

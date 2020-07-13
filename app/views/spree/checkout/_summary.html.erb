@@ -1,5 +1,5 @@
 <div class="checkout-content-summary">
-  <h3 class="text-uppercase text-center checkout-content-summary-header"><%= Spree.t(:order_summary) %></h3>
+  <h4 class="text-uppercase text-center checkout-content-summary-header"><%= Spree.t(:order_summary) %></h4>
   <div class="w-100 text-uppercase checkout-content-summary-table" data-hook="order_summary">
     <div class="d-table-cell"><%= Spree.t(:subtotal) %>:</div>
     <div class="d-table-cell text-right"><%= order.display_item_total.to_html %></div>
@@ -27,7 +27,7 @@
     <% end %>
 
     <% if order.passed_checkout_step?("address") && order.shipments.any? %>
-      <div class="d-table-cell"><%= Spree.t(:shipping) %>:</div>
+      <% if false %><div class="d-table-cell"><%= Spree.t(:shipping) %>:</div>
       <% shipping_total = Spree::Money.new(order.shipments.to_a.sum(&:cost), currency: order.currency) %>
       <div class="d-table-cell text-right"
            data-hook='shipping-total'
@@ -37,7 +37,7 @@
            precision='<%= Money::Currency.find(order.currency).exponent %>'
       >
         <%= shipping_total.to_html %>
-      </div>
+      </div><% end %>
 
       <% if order.shipment_adjustments.nonzero.exists? %>
         <% order.shipment_adjustments.nonzero.promotion.eligible.group_by(&:label).each do |label, adjustments| %>

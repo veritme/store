@@ -19,8 +19,10 @@
                       tax: rate.display_tax_amount
                     } %>
                   <span class="spree-radio-label-custom-input"></span>
-                  <span class="rate-name"><%= rate.name %></span>
-                  <p class="rate-cost"><%= rate.display_cost %></p>
+                  <span class="rate-cost"><%= rate.name %></span>
+                  <% if rate.name == "Con Instalación"%>
+                    <p class="rate-name">El precio deberá ser calculado manualmente por uno de nuestros asesores<%#= rate.display_cost %></p>
+                  <% end %>
                 </label>
               </li>
             <% end %>
