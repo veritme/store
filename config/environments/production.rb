@@ -60,6 +60,8 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "spree_production"
 
   config.action_mailer.perform_caching = false
+  config.action_controller.asset_host = 'https://store-sm-ec.herokuapp.com'
+  config.action_mailer.asset_host = config.action_controller.asset_host
   config.action_mailer.default_url_options = { :host => 'https://store-sm-ec.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

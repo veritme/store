@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/veritme/store_core.git
-  revision: bfd1d10255836e58152eff0e8fa5c30026c0b6d7
+  revision: b34219fe6b5d408e856ac81d0e0b4670b2e31794
   branch: master
   specs:
     spree_core (4.1.7)
