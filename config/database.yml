@@ -24,11 +24,11 @@ production:
   #<<: *default
   #database: db/production.sqlite3
   adapter: mysql2
-  host: l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
-  #enconding: utf8
+  host: remotemysql.com
+  enconding: utf8
   pool: 5
   timeout: 5000
-  database: om8su1h8mgzy1yp1
-  username: hgy4pm96pla4i91s
-  password: m707q3l0yv3vx2m4
+  database: I4RlVIe1MU
+  username: I4RlVIe1MU
+  password: GYuUzjVO53
   port: 3306
