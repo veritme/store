@@ -20,7 +20,12 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'spree', '~> 4.1'
+#gem 'spree', '~> 4.1'
+gem 'spree_core', github: 'veritme/store_core', branch: 'master'
+gem 'spree_api', '~> 4.1', '>= 4.1.7'
+gem 'spree_backend', '~> 4.1', '>= 4.1.7'
+gem 'spree_frontend', '~> 4.1', '>= 4.1.7'
+gem 'spree_sample', '~> 4.1', '>= 4.1.7'
 gem 'spree_auth_devise', '~> 4.1'
 gem 'spree_gateway', '~> 3.7'
 # Use Active Storage variant
@@ -28,6 +33,7 @@ gem 'spree_gateway', '~> 3.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'spree_mail_settings', github: 'veritme/store_mailer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

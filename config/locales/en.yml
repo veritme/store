@@ -294,44 +294,6 @@ en:
       spree/zone:
         one: Zona
         other: Zonas
-  devise:
-    confirmations:
-      confirmed: Tu cuenta fue confirmada satisfactoriamente. Ya estás registrado.
-      send_instructions: Recibirás un email con instrucciones sobre como confirmar tu cuenta en breves minutos.
-    failure:
-      inactive: Tu cuenta no fue activada todavía.
-      invalid: Email o password inválido.
-      invalid_token: Cadena de autenticación inválida.
-      locked: Tu cuenta está bloqueada
-      timeout: Tu sesión expiró, por favor regístrate otra vez para continuar.
-      unauthenticated: Necesitas registrarte o darte de alta antes de continuar
-      unconfirmed: Tienes que confirmar tu cuenta antes de continuar.
-    mailer:
-      confirmation_instructions:
-        subject: Instrucciones de confirmación
-      reset_password_instructions:
-        subject: Instrucciones para reinicializar el password
-      unlock_instructions:
-        subject: Instrucciones de desbloqueo
-    oauth_callbacks:
-      failure: No se te pudo autorizar desde %{kind} debido a %{reason}.
-      success: Autorizada satisfactoriamente desde la cuenta %{kind}.
-    unlocks:
-      send_instructions: Recibirás un email con instrucciones sobre como desbloquear la cuenta en breves minutos.
-      unlocked: Tu cuenta fue desbloqueada satisfactoriamente. Ya estás registrado.
-    user_passwords:
-      user:
-        cannot_be_blank: Tu password no puede estar en blanco
-        send_instructions: Recibiras un email con instrucciones sobre como reinicializar tu password en breves minutos
-        updated: Tu password fue cambiado con éxito. Ya estás registrado.
-    user_registrations:
-      destroyed: "¡Adiós! Tu cuenta fue cancelada satisfactoriamente. Esperamos volver a verte pronto."
-      inactive_signed_up: Te has dado de alta satisfactoriamente. Sin embargo, no pudimos registrarte debido a que tu cuenta está %{reason}.
-      signed_up: Bienvenido! Te has dado de alta satisfactoriamente.
-      updated: Has actualizado tu cuenta satisfactoriamente.
-    user_sessions:
-      signed_in: Registrado satisfactoriamente.
-      signed_out: Abandonado satisfactoriamente.
   errors:
     messages:
       already_confirmed: fue ya confirmada.
@@ -341,6 +303,11 @@ en:
         one: 1 error evitó que este %{resource} fuese grabado.
         other: "%{count} errores evitaron que este %{resource} fuese grabado:"
   spree:
+    log_in_to_continue: Ingresa para continuar
+    log_in: Ingresar
+    sign_up: Registro
+    already_have_account: ¿Ya tienes cuenta?
+    dont_have_account: ¿No tienes cuenta?
     checkout_page:
       delivery_method: Metodo de Instalación
       back_to_cart: Volver al Carrito
@@ -733,7 +700,7 @@ en:
     flat_percent: Porcentaje fijo
     flat_rate_per_order: Tarifa plana (por pedido)
     flexible_rate: Tarifa flexible
-    forgot_password: "¿Olvidaste el password?"
+    forgot_password: "¿Olvidaste la contraseña?"
     free_shipping: Envío gratuito
     free_shipping_amount: Cantidad de envío gratuito
     front_end: Parte delantera
@@ -770,7 +737,7 @@ en:
     info_number_of_skus_not_shown:
       one: "y uno más"
       other: "y %{count} más"
-    instructions_to_reset_password: Por favor introduce tu nombre en el siguiente formulario
+    instructions_to_reset_password: Por favor introduce tu email en el siguiente formulario
     insufficient_stock: Stock disponible insuficiente, sólo %{on_hand} restante
     insufficient_stock_lines_present: Insuficientes lineas de inventario presentes
     intercept_email_address: Interceptar Dirección Email
@@ -946,15 +913,16 @@ en:
     order_email_resent: Email de pedido reenviado
     order_information: Información del pedido
     order_mailer:
+      total: Total
       cancel_email:
-        dear_customer: Estimado cliente,\n
+        dear_customer: Estimado cliente,
         instructions: Tu pedido ha sido CANCELADO. Por favor conserva esta información de cancelación para tus registros.
         order_summary_canceled: Resumen de pedido [CANCELADO]
         subject: Cancelación de pedido
         subtotal: Subtotal
         total: Total
       confirm_email:
-        dear_customer: Estimado Cliente,\n
+        dear_customer: Estimado Cliente,
         instructions: Por favor, revisa y conserva la siguiente información del pedido de tus registros.
         order_summary: Resumen del pedido
         subject: Confirmación del pedido
@@ -985,7 +953,7 @@ en:
     other_items_in_other: Otros artículos en orden
     out_of_stock: Fuera de stock
     overview: Visión de conjunto
-    package_from: paquete desde
+    package_from: instalacion desde
     pagination:
       next_page: siguiente página »
       previous_page: "« página anterior"
@@ -1183,7 +1151,7 @@ en:
     report: Reporte
     reports: Informes
     resend: Reenviar
-    reset_password: Reinicializar password
+    reset_password: Recuperar contraseña
     response_code: Código de respuesta
     resume: reanudar
     resumed: Reanudado
@@ -1247,7 +1215,7 @@ en:
     shipment_details: Detalles de Envío
     shipment_mailer:
       shipped_email:
-        dear_customer: Estimado Cliente,\n
+        dear_customer: Estimado Cliente,
         instructions: Su pedido ha sido enviado
         shipment_summary: Resumen del envío
         subject: Notificación de Envío

@@ -16,6 +16,7 @@ Spree.config do |config|
   config.logo = 'logos/logo_word.png'
   config.admin_interface_logo = 'logos/logo_word_panel.png'
 end
+require "#{Rails.root}/config/initializers/app_configuration_decorator.rb"
 
 # Configure Spree Dependencies
 #
